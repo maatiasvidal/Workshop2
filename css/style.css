@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Lora:700|Montserrat:500|Raleway:500");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  height: 100%; }
+
+header {
+  height: 100%; }
+  header .menu {
+    background: black; }
+    header .menu nav {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto; }
+      header .menu nav .menu1, header .menu nav .menu2 {
+        display: flex; }
+        header .menu nav .menu1 li a, header .menu nav .menu2 li a {
+          color: #fff;
+          text-transform: uppercase;
+          padding: 0px 15px;
+          font-family: "Montserrat", sans-serif;
+          text-decoration: none;
+          font-size: 13px;
+          border-right: 0.5px solid grey; }
+        header .menu nav .menu1 li:last-child, header .menu nav .menu2 li:last-child {
+          border: none; }
+      header .menu nav .menu2 li {
+        align-self: center; }
+        header .menu nav .menu2 li a {
+          color: gold;
+          font-size: 15px;
+          padding: 0px 10px;
+          border: none; }
+      header .menu nav .menu2 li:last-child {
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 20px;
+        padding: 10px;
+        box-sizing: border-box; }
+        header .menu nav .menu2 li:last-child a {
+          color: #fff; }
+  header .general {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .general .imagen {
+      margin: 35px 0px; }
+    header .general .galeria {
+      display: flex;
+      width: 100%; }
+      header .general .galeria #img1, header .general .galeria #img2, header .general .galeria #img3 {
+        background: url("../imagenes/travel04.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      header .general .galeria #img2 {
+        background: url("../imagenes/travel12.jpg"); }
+      header .general .galeria #img3 {
+        background: url("../imagenes/travel091.jpg"); }
+      header .general .galeria article {
+        height: 400px;
+        flex: 1; }
+        header .general .galeria article div {
+          width: 33.3%;
+          position: absolute;
+          bottom: -1px;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          font-family: "Lora", serif;
+          padding: 18px;
+          box-sizing: border-box; }
+          header .general .galeria article div h5 {
+            margin-bottom: 6px;
+            font-size: 18px; }
+          header .general .galeria article div span {
+            font-size: 13px; }
+          header .general .galeria article div a {
+            font-family: "Raleway", sans-serif;
+            padding: 5px;
+            font-size: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            background: gold;
+            color: white;
+            border-radius: 3px; }
+      header .general .galeria .flechis {
+        position: absolute;
+        top: 430px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 5px 7px 5px 10px;
+        box-sizing: border-box; }
+      header .general .galeria .izquierda {
+        left: 20px; }
+      header .general .galeria .derecha {
+        right: 20px; }
+
+/*# sourceMappingURL=style.css.map */

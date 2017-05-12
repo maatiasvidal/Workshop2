@@ -1,0 +1,139 @@
+@import "_reset";
+@import "_variables";
+
+html, body{
+	height:100%;
+}
+header{
+	height:100%;
+	.menu{
+		background: black;
+		nav{
+			display: flex;
+			width: 80%;
+			justify-content: space-between;
+			align-items:center;
+			margin: auto;
+			
+			.menu1{
+				display: flex;
+				li{
+					
+					a{
+						color:#fff;
+						text-transform: uppercase;
+						padding: 0px 15px;
+						font-family:$categorias;
+						text-decoration:none;
+						font-size: 13px;
+						border-right:0.5px solid grey;
+					}
+				}
+				li:last-child{
+					border:none;
+				}
+			}
+			.menu2{
+				@extend .menu1;
+				li{
+					align-self:center;
+					
+					a{
+						color:gold;
+						font-size: 15px;
+						padding: 0px 10px;
+						border:none;
+					}
+				}
+				li:last-child{
+					background:rgba(255, 255, 255, 0.1);
+					font-size: 20px;
+					padding:10px;
+					box-sizing:border-box;
+					a{
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
+	.general{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.imagen{
+			margin: 35px 0px;
+		}
+		.galeria{
+			display: flex;
+			width: 100%;
+
+			#img1{
+				background:url("../imagenes/travel04.jpg");
+				background-position:center;
+				background-size:cover;
+				background-repeat:no-repeat;
+			}
+
+			#img2{
+				@extend #img1;
+				background:url("../imagenes/travel12.jpg");
+			}
+			#img3{
+				@extend #img1;
+				background:url("../imagenes/travel091.jpg");
+			}
+			article{
+				height: 400px;
+				flex:1;
+				
+				div{
+					width: 33.3%;
+					position: absolute;
+					bottom:-1px;
+					background: rgba(0,0,0,0.5);
+					color:white;
+					font-family: $textos;
+					padding:18px;
+					box-sizing:border-box;
+					h5{
+						margin-bottom: 6px;
+						font-size: 18px;
+					}
+					span{
+						font-size: 13px;
+					}
+					a{	
+						font-family: $titulos;
+						padding:5px;
+						font-size: 10px;
+						text-transform: uppercase;
+						text-decoration: none;
+						font-weight: bold;
+						background:gold;
+						color: white;
+						border-radius:3px;
+					}
+				}
+
+			}
+			
+			.flechis{
+				position:absolute;
+				top: 430px;
+				text-decoration: none;
+				color:white;
+				border:1px solid white;
+				padding:5px 7px 5px 10px;
+				box-sizing:border-box;
+			}
+			.izquierda{
+				left:20px;
+			}
+			.derecha{
+				right: 20px;
+			}	
+		}
+	
+	}
+}
